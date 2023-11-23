@@ -19,7 +19,8 @@ if __name__=='__main__':
     #randomList=np.arange(0.1,1,0.1)
     async_resultList=[]
     final_resultList=[]
-    halfRandomNumber = 250
+    halfRandomNumber = 50 # generate training data
+    #halfRandomNumber = 500 # generate test data
     theta0_min = [0.3, 0.9]
     theta0_max = [0.4, 1]
     randomTheta0_1 = np.random.uniform(low=theta0_min[0], high=theta0_max[0], size=(halfRandomNumber,1))
@@ -59,6 +60,8 @@ if __name__=='__main__':
     for i in async_resultList:
         final_resultList.append(i.get())
     print(final_resultList)
-    saveLabelledData(final_resultList)
+    sheetName='mine_dynamic_opt_buffer_thetaAndFlag_100.txt' # generate training data
+    #sheetName='mine_dynamic_opt_buffer_thetaAndFlag_ForTest.txt' # generate test data
+    saveLabelledData(final_resultList,sheetName)
 
 #labelFunc(0.5)

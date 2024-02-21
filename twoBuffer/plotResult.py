@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas
 
+# #为单段时间的feasible points画图展示
 # matplotlib.use('TKAgg')
 # sheetNametoSave='mine_dynamic_opt_twobuffer_thetaAndFlag_10000(i55_b46).txt'
 # #sheetNametoSave='mine_dynamic_opt_twobuffer_thetaAndFlag_10000(i46_b46).txt'

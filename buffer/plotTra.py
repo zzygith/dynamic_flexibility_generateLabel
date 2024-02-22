@@ -14,3 +14,5 @@ pltR=np.array(pltR)
 for i in pltR:
     plt.plot(i)
 plt.show()
+print(trdat[:,0:-1])
+print(trdat[:,-1:])

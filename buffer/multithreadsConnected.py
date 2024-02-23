@@ -45,6 +45,9 @@ if __name__=='__main__':
     for i in async_resultList:
         final_resultList.append(i.get())
     print(final_resultList)
-    sheetName='mine_dynamic_opt_buffer_thetaAndFlag_connected100_2.txt' # generate training data
+    #sheetName='mine_dynamic_opt_buffer_thetaAndFlag_connected100.txt' # generate training data
+    #sheetName='mine_dynamic_opt_buffer_thetaAndFlag_connected100_2.txt' # generate training data
+    #sheetName='mine_dynamic_opt_buffer_thetaAndFlag_connected100_3.txt' # generate training data
+    sheetName='mine_dynamic_opt_buffer_thetaAndFlag_connected100_4.txt' # generate training data
     saveLabelledData(final_resultList,sheetName)
 
